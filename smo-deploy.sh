@@ -13,7 +13,7 @@ fi
 
 if [ "$1" == "check" ]
 	then
-	kubect get pods --all-namespaces
+	kubectl get pods --all-namespaces
 	echo "There should be 9 pods running in kube-system namespace."
 fi
 
