@@ -22,6 +22,7 @@ if [ "$1" == "deploy" ]
 	cd ~/dep/smo/bin
 	chmod 777 ./install
 	./install initlocalrepo
+	cp -R /root/dep/smo/bin/smo-deploy/smo-oom/kubernetes/helm/plugins/ /root/.helm
 	echo "Take coffee"
 	./install
 fi
