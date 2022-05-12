@@ -1,5 +1,5 @@
 #!/bin/bash
-	apt-get upadate
+	apt-get update
 	apt-get install git -y
 	git clone https://github.com/EdikGres/smo.git
 	cd ./smo
