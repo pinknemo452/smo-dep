@@ -9,6 +9,8 @@
 	sed -i -e '/reboot/d' ./k8s-1node-cloud-init-k_1_15-h_2_17-d_cur.sh
 	./k8s-1node-cloud-init-k_1_15-h_2_17-d_cur.sh
 
+	docker pull myarmolovich/filebeat:5.5.0
+	docker tag myarmolovich/filebeat:5.5.0 docker.elastic.co/beats/filebeat:5.5.0
 	cd ~/dep/smo/bin
 	chmod 777 ./install
 	./install initlocalrepo
