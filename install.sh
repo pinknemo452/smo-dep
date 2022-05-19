@@ -210,7 +210,14 @@ done
 echo && echo "===> Deploy NONRTRIIC"
 git clone http://gerrit.o-ran-sc.org/r/it/dep smo-dep
 cd smo-dep
+
+cd demos/bronze
+env SMO_IP=192.168.233.19 RIC_IP=192.168.233.164 ./__config-ip.sh < README.txt
+cd ../..
+
 REPOROOTDIR=$(git rev-parse --show-toplevel)
+
+
 
 #edik
 rm ~/dep/smo/bin/smo-deploy/smo-dep/nonrtric/helm/nonrtric/requirements.lock
