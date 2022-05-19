@@ -208,7 +208,7 @@ done
 
 
 echo && echo "===> Deploy NONRTRIIC"
-git clone http://gerrit.o-ran-sc.org/r/it/dep smo-dep
+git clone http://gerrit.o-ran-sc.org/r/it/dep smo-dep -b bronze
 cd smo-dep
 
 cd demos/bronze
