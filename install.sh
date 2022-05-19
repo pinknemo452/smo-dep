@@ -212,7 +212,7 @@ git clone http://gerrit.o-ran-sc.org/r/it/dep smo-dep
 cd smo-dep
 
 cd demos/bronze
-env SMO_IP=192.168.233.19 RIC_IP=192.168.233.164 ./__config-ip.sh < README.txt
+env SMO_IP=192.168.233.75 RIC_IP=192.168.233.232 ./__config-ip.sh < README.txt
 cd ../..
 
 REPOROOTDIR=$(git rev-parse --show-toplevel)
